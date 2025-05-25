@@ -1,3 +1,65 @@
+
+/* src/components/Home.css */
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0892b0;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .home-content {
+    max-width: 600px;
+  }
+  
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #393a3a;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-buttons .btn {
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    margin: 0 0.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: #ffcc00;
+    color: #222;
+  }
+  
+  .btn-secondary {
+    background-color: #555;
+  }
+  .btn-secondary:hover {
+    background-color: #ffcc00;
+    color: #222;
+  }
+
 /* Mobile Devices (max-width: 600px) */
 @media (max-width: 600px) {
     .home-section {

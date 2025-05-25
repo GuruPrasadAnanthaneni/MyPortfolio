@@ -1,3 +1,28 @@
+
+.footer {
+    background-color: #0e0e0e;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 50px;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #fff;
+  }
+
 /* Mobile Devices (max-width: 600px) */
 @media (max-width: 600px) {
     .footer {
