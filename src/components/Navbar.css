@@ -1,6 +1,3 @@
-
-/* src/components/Navbar.css */
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,9 +39,24 @@
   .navbar-right a:hover {
     color: #ffcc00;
   }
-
-/* Mobile Devices (max-width: 600px) */
-@media (max-width: 600px) {
+  
+  /* Hamburger styles */
+  .hamburger {
+    display: none; /* hidden on desktop/tablets */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+  
+  /* Mobile Devices (max-width: 600px) */
+  @media (max-width: 600px) {
     .navbar {
       flex-direction: column;
       align-items: flex-start;
@@ -60,11 +72,22 @@
       font-size: 1.3rem;
     }
   
-    .navbar-right {
+    /* Show hamburger on mobile */
+    .hamburger {
       display: flex;
+    }
+  
+    /* Hide navbar links by default */
+    .navbar-right {
+      display: none;
       flex-direction: column;
       width: 100%;
       margin-top: 1rem;
+    }
+  
+    /* Show links when menu is open */
+    .navbar-right.open {
+      display: flex;
     }
   
     .navbar-right a {

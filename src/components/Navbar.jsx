@@ -1,11 +1,21 @@
-// src/components/Navbar.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../assets/image1.jpg';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  // Close menu when clicking a link
+  const handleLinkClick = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -14,14 +24,22 @@ const Navbar = () => {
         <img src={logo} alt="Logo" className="logo" />
         <h1>MyPortfolio</h1>
       </div>
-      <div className="navbar-right">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+
+      {/* Hamburger menu icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+
+      <div className={`navbar-right ${menuOpen ? 'open' : ''}`}>
+        <a href="#home" onClick={handleLinkClick}>Home</a>
+        <a href="#about" onClick={handleLinkClick}>About</a>
+        <a href="#skills" onClick={handleLinkClick}>Skills</a>
+        <a href="#projects" onClick={handleLinkClick}>Projects</a>
+        <a href="#resume" onClick={handleLinkClick}>Resume</a>
+        <a href="#blog" onClick={handleLinkClick}>Blog</a>
+        <a href="#contact" onClick={handleLinkClick}>Contact</a>
       </div>
     </nav>
   );
