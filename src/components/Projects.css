@@ -1,111 +1,42 @@
-.projects-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+    .projects-section {
+      padding: 40px 10px;
+    }
+  
+    .projects-section h2 {
+      font-size: 2rem;
+    }
+  
+    .projects-grid {
+      flex-direction: column;
+      align-items: center;
+      overflow-x: visible;
+    }
+  
+    .project-card {
+      min-width: 90%;
+      max-width: 100%;
+    }
   }
   
-  .projects-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
+  /* Tablets (601px to 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .projects-section {
+      padding: 50px 15px;
+    }
+  
+    .projects-section h2 {
+      font-size: 2.2rem;
+    }
+  
+    .projects-grid {
+      gap: 16px;
+    }
+  
+    .project-card {
+      min-width: 300px;
+      max-width: 90%;
+    }
   }
-  
-  .projects-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-    overflow-x: auto;
-    padding: 10px 0;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .project-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    padding: 25px 30px;
-    text-align: left;
-    min-width: 320px;
-    max-width: 400px;
-    scroll-snap-align: start;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .project-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #222;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .project-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .project-card ul {
-    margin-bottom: 15px;
-    padding-left: 20px;
-    color: #444;
-  }
-  
-  .project-card ul li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-  }
-  
-  .project-card strong {
-    color: #333;
-  }
-  
-  .project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #007acc;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .project-card a:hover {
-    color: #005f99;
-  }
-  
-  .github-unavailable {
-    color: #999;
-    font-style: italic;
-    margin-top: 10px;
-    display: inline-block;
-    font-size: 0.95rem;
-  }
-  
-  /* Optional scrollbar customization */
-  .projects-grid::-webkit-scrollbar {
-    height: 10px;
-  }
-  
-  .projects-grid::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 10px;
-  }
-
-  
-
-
-  
-
   
