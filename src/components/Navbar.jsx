@@ -13,7 +13,6 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Close menu when clicking a link
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
@@ -25,7 +24,7 @@ const Navbar = () => {
         <h1>MyPortfolio</h1>
       </div>
 
-      {/* Hamburger menu icon */}
+      {/* Hamburger icon on right */}
       <div className="hamburger" onClick={toggleMenu}>
         <div className="line"></div>
         <div className="line"></div>

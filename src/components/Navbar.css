@@ -1,15 +1,30 @@
-.navbar {
+/* Reset for safety */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #222;
-    color: rgb(255, 255, 255);
+    color: white;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 999;
+    width: 100%; /* Ensure no overflow */
   }
   
+  /* Left: Logo + Title */
   .navbar-left {
     display: flex;
     align-items: center;
@@ -28,6 +43,12 @@
     color: aliceblue;
   }
   
+  /* Right: Nav Links */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
   .navbar-right a {
     color: white;
     text-decoration: none;
@@ -42,7 +63,7 @@
   
   /* Hamburger styles */
   .hamburger {
-    display: none; /* hidden on desktop/tablets */
+    display: none;
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
@@ -55,37 +76,29 @@
     border-radius: 2px;
   }
   
-  /* Mobile Devices (max-width: 600px) */
+  /* Mobile Devices */
   @media (max-width: 600px) {
     .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-wrap: wrap;
+      flex-direction: row;
       padding: 1rem;
     }
   
     .navbar-left {
-      width: 100%;
-      justify-content: space-between;
+      flex: 1;
     }
   
-    .navbar-left h1 {
-      font-size: 1.3rem;
-    }
-  
-    /* Show hamburger on mobile */
     .hamburger {
       display: flex;
     }
   
-    /* Hide navbar links by default */
     .navbar-right {
       display: none;
-      flex-direction: column;
       width: 100%;
+      flex-direction: column;
       margin-top: 1rem;
     }
   
-    /* Show links when menu is open */
     .navbar-right.open {
       display: flex;
     }
@@ -95,7 +108,7 @@
     }
   }
   
-  /* Tablets (601px to 1024px) */
+  /* Tablets */
   @media (min-width: 601px) and (max-width: 1024px) {
     .navbar {
       padding: 1rem 1.5rem;
@@ -110,15 +123,10 @@
     }
   }
   
-  /* Desktops (1025px and above) */
+  /* Desktops */
   @media (min-width: 1025px) {
     .navbar {
-      flex-direction: row;
       padding: 1rem 2rem;
-    }
-  
-    .navbar-right {
-      flex-direction: row;
     }
   }
   

@@ -1,7 +1,16 @@
-
-/* src/components/Home.css */
-
-.home-section {
+/* Reset and layout fixes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home-section {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -9,6 +18,7 @@
     background-color: #0892b0;
     text-align: center;
     padding: 2rem;
+    width: 100%; /* Avoid overflows */
   }
   
   .home-content {
@@ -36,15 +46,25 @@
     margin-bottom: 1.5rem;
   }
   
+  /* Home Buttons Container */
+  .home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+  
+  /* Individual Button Styling */
   .home-buttons .btn {
     text-decoration: none;
     padding: 0.7rem 1.4rem;
-    margin: 0 0.5rem;
     border-radius: 25px;
     font-weight: bold;
     transition: background-color 0.3s ease;
     background-color: #222;
     color: #fff;
+    white-space: nowrap;
+    display: inline-block;
   }
   
   .btn:hover {
@@ -55,13 +75,14 @@
   .btn-secondary {
     background-color: #555;
   }
+  
   .btn-secondary:hover {
     background-color: #ffcc00;
     color: #222;
   }
-/* Mobile-first base styles already there */
-
-@media (max-width: 768px) {
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
     .home-section {
       padding: 1rem;
     }
@@ -84,13 +105,22 @@
       font-size: 1rem;
     }
   
+    .home-buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  
     .home-buttons .btn {
-      padding: 0.5rem 1rem;
-      font-size: 0.9rem;
-      margin: 0.3rem 0.3rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      margin: 0;
+      width: 80%; /* Or use max-content if you prefer */
+      max-width: 250px;
     }
   }
   
+  /* Large screen padding */
   @media (min-width: 1025px) {
     .home-section {
       padding: 3rem;

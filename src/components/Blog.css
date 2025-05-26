@@ -29,6 +29,34 @@
     max-width: 370px;
   }
   
+
+  /* .blogs-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .blog-card {
+    min-width: 370px;
+    max-width: 370px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, max-height 0.5s ease;
+    overflow: hidden;
+    max-height: 400px;
+  } */
+  
+
   .blog-card:hover {
     transform: translateY(-5px);
   }
