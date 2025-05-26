@@ -51,7 +51,11 @@ const Blog = () => {
       <h2>Blogs</h2>
       <div className="blogs-container">
         {blogData.map((blog, index) => (
-            <div key={index} className={`blog-card ${expandedIndex === index ? 'expanded' : ''}`}>
+          <div
+            key={index}
+            className={`blog-card ${expandedIndex === index ? 'expanded' : ''}`}
+            style={expandedIndex === index ? { alignSelf: 'flex-start' } : {}}
+          >
             <h3>{blog.title}</h3>
             <p><strong>Date:</strong> {blog.date}</p>
             <p><strong>Category:</strong> {blog.category}</p>
