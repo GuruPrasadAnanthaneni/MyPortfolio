@@ -64,7 +64,8 @@
   .blog-card h3 {
     margin-top: 0;
     font-size: 1.2rem;
-    color: #00796b;
+    color: #0d6efd;
+    margin-bottom: 1.5rem;
   }
   
   .read-more-btn {
