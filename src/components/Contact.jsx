@@ -84,7 +84,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <h2>Contact Me</h2>
+      <h2 className="contact-heading">Contact Me</h2>
       <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="user_name" placeholder="Your Name" required />
         <input type="email" name="user_email" placeholder="Your Email" required />
