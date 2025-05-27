@@ -1,4 +1,4 @@
-// src/components/Resume.jsx
+
 import React from 'react';
 import './Resume.css';
 import resumeImage from '../assets/resume.jpg'; 

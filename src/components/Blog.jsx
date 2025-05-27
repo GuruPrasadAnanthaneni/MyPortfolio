@@ -40,9 +40,9 @@ const Blog = () => {
 
   const handleToggle = (index) => {
     if (expandedIndex === index) {
-      setExpandedIndex(null); // Collapse if already open
+      setExpandedIndex(null); 
     } else {
-      setExpandedIndex(index); // Expand new one
+      setExpandedIndex(index); 
     }
   };
 

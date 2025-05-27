@@ -1,4 +1,4 @@
-/* Reset for safety */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +10,6 @@
     overflow-x: hidden;
   }
   
-  /* Navbar */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,10 +20,10 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 100%; /* Ensure no overflow */
+    width: 100%; 
   }
   
-  /* Left: Logo + Title */
+
   .navbar-left {
     display: flex;
     align-items: center;
@@ -43,7 +42,7 @@
     color: aliceblue;
   }
   
-  /* Right: Nav Links */
+
   .navbar-right {
     display: flex;
     align-items: center;
@@ -61,7 +60,7 @@
     color: #ffcc00;
   }
   
-  /* Hamburger styles */
+
   .hamburger {
     display: none;
     flex-direction: column;
@@ -76,7 +75,6 @@
     border-radius: 2px;
   }
   
-  /* Mobile Devices */
   @media (max-width: 600px) {
     .navbar {
       flex-wrap: wrap;
@@ -108,7 +106,6 @@
     }
   }
   
-  /* Tablets */
   @media (min-width: 601px) and (max-width: 1024px) {
     .navbar {
       padding: 1rem 1.5rem;
@@ -123,7 +120,6 @@
     }
   }
   
-  /* Desktops */
   @media (min-width: 1025px) {
     .navbar {
       padding: 1rem 2rem;

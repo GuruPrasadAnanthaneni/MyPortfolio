@@ -1,4 +1,4 @@
-// src/components/Skills.jsx
+
 import React from 'react';
 import './Skills.css';
 
@@ -12,7 +12,7 @@ import {
   faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 
-import { faDatabase } from '@fortawesome/free-solid-svg-icons'; // generic database icon
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'; 
 
 const skills = [
   { name: 'HTML5', icon: faHtml5 },

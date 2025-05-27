@@ -1,7 +1,6 @@
-// src/components/About.jsx
 import React from 'react';
 import './About.css';
-import profileImage from '../assets/image3.jpg'; // Replace with your image
+import profileImage from '../assets/image3.jpg';
 
 const About = () => {
   return (

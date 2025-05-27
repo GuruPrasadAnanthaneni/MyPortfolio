@@ -56,7 +56,6 @@
     color: #007bff;
   }
 
-/* Mobile Devices (max-width: 600px) */
 @media (max-width: 600px) {
     .contact-section {
       padding: 2rem 1rem;
@@ -82,7 +81,6 @@
     }
   }
   
-  /* Tablets (601px to 1024px) */
   @media (min-width: 601px) and (max-width: 1024px) {
     .contact-section {
       padding: 2.5rem 1.5rem;
@@ -107,7 +105,7 @@
     }
   }
   
-  /* Large Screens (1025px and above) */
+
   @media (min-width: 1025px) {
     .contact-section {
       padding: 3rem 2rem;

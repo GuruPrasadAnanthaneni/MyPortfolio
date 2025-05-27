@@ -1,7 +1,7 @@
-// src/components/Home.jsx
+
 import React from 'react';
 import './Home.css';
-import profileImage from '../assets/image1.jpg'; // make sure image is in src/assets
+import profileImage from '../assets/image1.jpg'; 
 
 const Home = () => {
   return (
